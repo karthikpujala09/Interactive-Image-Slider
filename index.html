@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Interactive Image Slider</title>
+  <!-- Link to external CSS file for styling -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- Header section with the title of the page -->
+  <header>
+    <h1>Interactive Image Slider</h1>
+    <!-- The header introduces the purpose of the webpage to the user -->
+  </header>
+
+  <!-- Slider container which holds the image slider and controls -->
+  <div class="slider-container">
+    <!-- Slider section that holds all the images to be displayed in the slider -->
+    <div class="slider">
+      <!-- Each image inside this div represents a slide -->
+      <img src="https://i.pinimg.com/736x/d6/5e/f6/d65ef6b8c3a87480296fc02dd08f8620.jpg" alt="Image 1" class="slide" />
+      <img src="https://www.nativeplanet.com/img/2023/10/image-depicting-the-festive-spirit-and-snow-clad-charm-of-shimla-during-christmas_1698646313788-1200x675-20231030114601.jpg" alt="Image 2" class="slide" />
+      <img src="https://akm-img-a-in.tosshub.com/businesstoday/images/story/202306/new-zealand-1-1200x675-sixteen_nine.jpeg?size=948:533" alt="Image 3" class="slide" />
+      <img src="https://i.pinimg.com/736x/43/a9/9f/43a99f88c6a1493c75c24f5d4a3eef4f.jpg" alt="Image 4" class="slide" />
+      <img src="https://www.gorajasthan.travel/blog/wp-content/uploads/2022/10/taj-mahal-agra-india-wallpaper-1200x675.jpg" alt="Image 5" class="slide" />
+    </div>
+
+    <!-- Navigation buttons to move between images -->
+    <button class="nav-btn prev-btn">‹</button> <!-- Previous button -->
+    <button class="nav-btn next-btn">›</button> <!-- Next button -->
+
+    <!-- Play/Pause button to control the autoplay feature of the slider -->
+    <button class="play-pause-btn" id="play-pause-btn">⏸</button>
+
+    <!-- Dots navigation below the images for quick navigation -->
+    <div class="dots-container">
+      <span class="dot active"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
+    </div>
+  </div>
+
+  <!-- Footer section with a clickable link to my LinkedIn profile -->
+  <footer>
+    <p>Created by <a href="https://www.linkedin.com/in/karthik-pujala-161002279/" target="_blank">Karthik Pujala</a></p>
+    <!-- The footer provides credit to the creator and includes a link to their LinkedIn profile -->
+  </footer>
+
+  <!-- Link to the external JavaScript file for the functionality of the slider -->
+  <script src="script.js"></script>
+</body>
+
+</html>

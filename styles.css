@@ -1,0 +1,131 @@
+/* General Styles */
+body, html {
+    font-family: Arial, sans-serif; /* Use a clean and simple font */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+    background-color: #5c5cb9; /* Set a pleasant background color */
+    color: #333; /* Default text color */
+    height: 100%; /* Ensure body and html cover full height */
+    overflow: hidden; /* Disable scrolling for a cleaner interface */
+    display: flex; /* Use flexbox layout */
+    flex-direction: column; /* Arrange elements vertically */
+    align-items: center; /* Center elements horizontally */
+    justify-content: center; /* Center elements vertically */
+}
+
+/* Header Styles */
+header {
+    text-align: center; /* Center-align the header text */
+    margin: 10px 10px; /* Small margin around the header */
+    color: #fff; /* White color for the header text */
+}
+
+/* Footer Styles */
+footer {
+    margin-top: 20px; /* Add some space above the footer */
+    font-size: 0.9em; /* Slightly smaller text for footer */
+    color: #ddd; /* Light grey color for footer text */
+}
+
+/* Slider Container Styles */
+.slider-container {
+    position: relative; /* Position relative to allow absolute positioning for controls */
+    width: 100%; /* Full width of the container */
+    max-width: 800px; /* Set max width for the container */
+    margin: 0 auto; /* Center align the slider horizontally */
+    background-color: rgba(255, 255, 255, 0.7); /* Light, semi-transparent background */
+    border-radius: 30px; /* Rounded corners for a smooth look */
+    overflow: hidden; /* Hide elements that overflow the container */
+}
+
+/* Slider Styles */
+.slider {
+    display: flex; /* Arrange slides horizontally */
+    transition: transform 0.5s ease-in-out; /* Smooth transition between slides */
+}
+
+/* Individual Slide Styles */
+.slide {
+    width: 100%; /* Each slide takes up full width of the container */
+    flex-shrink: 0; /* Prevent slides from shrinking */
+    height: 450px; /* Set a fixed height for the slides */
+    object-fit: cover; /* Ensure the image covers the slide area without stretching */
+}
+
+/* Navigation Button Styles */
+.nav-btn {
+    position: absolute; /* Position buttons absolutely within the slider */
+    top: 50%; /* Position the buttons vertically centered */
+    transform: translateY(-50%); /* Correct for the height of the button */
+    background-color: rgba(0, 0, 0, 0.5); /* Dark background for visibility */
+    color: white; /* White text color */
+    border: none; /* No border */
+    padding: 10px 20px; /* Comfortable padding for the buttons */
+    cursor: pointer; /* Change cursor to indicate clickability */
+    font-size: 1.5em; /* Large font for visibility */
+    border-radius: 50%; /* Circular buttons */
+}
+
+/* Hover Effect for Navigation Buttons */
+.nav-btn:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Darken background on hover */
+}
+
+/* Positioning the Previous Button */
+.prev-btn {
+    left: 10px; /* Place on the left side */
+}
+
+/* Positioning the Next Button */
+.next-btn {
+    right: 10px; /* Place on the right side */
+}
+
+/* Play/Pause Button Styles */
+.play-pause-btn {
+    display: block; /* Display as block to center it */
+    margin: 20px auto; /* Center horizontally and add some margin */
+    background: none; /* No background */
+    border: none; /* No border */
+    color: #000000; /* Black text color */
+    cursor: pointer; /* Pointer cursor on hover */
+    font-size: 2em; /* Larger size for the icon */
+    outline: none; /* Remove focus outline */
+}
+
+/* Hover Effect for Play/Pause Button */
+.play-pause-btn:hover {
+    color: #f0f0f0; /* Lighten the icon color on hover */
+    transform: scale(1.1); /* Slight zoom effect on hover */
+}
+
+/* Dots Navigation Styles */
+.dots-container {
+    position: absolute; /* Position at the bottom of the slider */
+    bottom: 10px; /* Space from the bottom */
+    left: 50%; /* Center horizontally */
+    transform: translateX(-50%); /* Correct horizontal centering */
+    display: flex; /* Arrange dots in a row */
+    justify-content: center; /* Center dots */
+    align-items: center; /* Vertically align dots */
+}
+
+/* Individual Dot Styles */
+.dot {
+    width: 10px; /* Small circular dots */
+    height: 10px;
+    margin: 0 5px; /* Space between dots */
+    background-color: rgba(255, 255, 255, 0.5); /* Light background for inactive dots */
+    border-radius: 50%; /* Make dots round */
+    cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Active Dot Styles */
+.dot.active {
+    background-color: rgba(255, 255, 255, 1); /* Solid color for active dot */
+}
+
+/* Hover Effect for Dots */
+.dot:hover {
+    background-color: white; /* Make dots white on hover */
+}
